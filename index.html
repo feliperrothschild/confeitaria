@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Site-Confeitaria</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins|Roboto|Roboto+Condensed|Roboto+Slab|Baloo|Barrio" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="menu">
+    <img src="logos/logos-02.png" alt="Damn">
+    <a href="index.html"> <span class="home"> HOME </span> </a>
+    <a href="config_v2.html"> <span class="build"> MONTE SEU BOLO </span> </a>
+    <a href="#empresa"> <span class="about"> SOBRE </span> </a>
+    <a href='mailto:contato@damn.com.br'><span class="contact"> CONTATO </span></a>
+  </nav>
+
+
+<p class="texto_banner"> Venha experimentar os nossos bolos </p>
+<section class="banner">
+
+  <img src="images/banner1.jpg" alt="Bolo" class="ativa">
+  <img src="images/banner2.jpg" alt="Festa">
+  <img src="images/banner3.jpg" alt="Cupcake">
+
+
+</section>
+
+<br>
+
+<section id="empresa">
+<h1> QUEM SOMOS? </h1>
+<p>
+  Mussum Ipsum, cacilds vidis litro abertis. Quem num gosta di mé, boa gentis num é. Cevadis im ampola pa arma uma pindureta. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+</p>
+<p>
+  Delegadis gente finis, bibendum egestas augue arcu ut est. Casamentiss faiz malandris se pirulitá. Per aumento de cachacis, eu reclamis. Viva Forevis aptent taciti sociosqu ad litora torquent.
+</p>
+<p>
+  Quem num gosta di mim que vai caçá sua turmis! A ordem dos tratores não altera o pão duris. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Suco de cevadiss deixa as pessoas mais interessantis.
+</p>
+<p>
+  Aenean aliquam molestie leo, vitae iaculis nisl. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.  Diuretics paradis num copo é motivis de denguis. Leite de capivaris, leite de mula manquis sem cabeça.
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</section>
+    <script>
+    var imagensBanner = document.querySelectorAll(".banner img");
+    // No JavaScript, quando damos um espaço, significa que queremos que procure dentro da classe.
+
+    var imagensBannerAtiva = 0;
+
+    function trocarImagemBanner(){
+      imagensBanner[imagensBannerAtiva].classList.remove('ativa');
+      imagensBannerAtiva++
+
+      if(imagensBannerAtiva>=imagensBanner.length){
+        imagensBannerAtiva=0;
+      }
+      imagensBanner[imagensBannerAtiva].classList.add('ativa');
+    }
+
+    setInterval(trocarImagemBanner,2500);
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+body{
+
+  /*font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-family: 'Poppins', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
+  /*max-width: 1000px;
+  margin-left: 10%;*/
+  /*background-color: #FFBC85;*/
+}
+
+/* CONFIGURAÇÃO DA BARRA DE NAVEGAÇÃO*/
+.nav-tabs{
+  font-family: 'Roboto', sans-serif;
+  float: right;}
+
+  nav.navbar.navbar-default.navbar-fixed-top {
+    background-color: #FF4175;
+    color: white;
+    font-size: 20px;}
+
+  a {
+      color: inherit; /* blue colors for links too */
+      text-decoration: inherit; /* no underline */
+    }
+
+nav .container{
+      /*margin-top: 1%;*/
+      margin-left: 50%;
+      height: 10px  ;
+      margin-top: 1%;
+  }
+/*nav span.title{
+      text-align: left;
+      margin-left: -65%;
+      padding-right: 33%;
+      font-size: 25px;
+      font-family: 'Palanquin', sans-serif;
+      font-style: italic;
+      display: inline;
+    }*/
+
+    nav div.container span.texto{
+      /*padding-right: 1%;*/
+      margin-right: 3%;
+      /*float: right*/
+
+    }
+
+    nav a {
+      color: inherit; /* blue colors for links too */
+      text-decoration: none; /* no underline */
+      padding-top: 1%;
+    }
+
+    nav{
+      display: block;
+    }
+
+    nav img{
+      width: 11%;
+      /*margin-bottom: 1.5%;*/
+      /*margin-top: %;*/
+      float: left;
+      margin-left: -60%;
+      margin-top: -1%;
+    }
+
+    section.dashboard_menu nav.navbar {
+    position: relative;
+    min-height: 45px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+    /*---------------------------------------------------------------------------*/
+
+    h1.build{
+      color: #DE264C;
+      margin: 0;
+      text-align: left;
+      font-size: 50px;
+      font-family: 'Baloo';
+      margin-bottom: 1.7%;
+    }
+
+    .title {
+      float: left;
+      -webkit-transform: translateX(80%);
+      -webkit-transform-origin: 80% 100%;
+      margin-left: -26%;
+      margin-right: 2%;
+      /* background-color: #FFF268; */
+      color: #FFB009;
+      font-size: 25px;
+      font-weight: bold;
+      height: 10%;
+      margin-top: 1%;
+      width: 27%;
+      text-align: center;
+      font-family: 'Roboto Slab', sans-serif;
+    }
+    section.dashboard div.bolo_total{
+      font-weight: bold;
+      margin-top: 90%;
+    }
+
+    section.dashboard div.col-sm-8{
+      /*display: flex;*/
+      /*border-radius: 10px;
+      border: 0.5px solid #888282;*/
+      background-color: white;
+      /*width: 100%;*/
+      height:490px;
+      /*border-left: 15%;*/
+
+    }
+    section.dashboard div.col-sm-8.row{
+      margin-left: 10px;
+    }
+
+    section.dashboard div.panel-heading{
+      background-color: #FFD4EE;
+    }
+
+    section.dashboard h3.panel-title{
+      /*color: #FFB009;*/
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Roboto Slab', sans-serif;
+      display:inline;
+    }
+
+    section.dashboard div.panel{
+      height:450px;
+    }
+    section.dashboard p.nome{
+      font-weight: bold;
+      margin:0;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    section.dashboard p.preco{
+      margin:0;
+      font-size: 16px;
+      color: #257aed;
+      text-align: center;
+    }
+
+    section.dashboard div.radio-selector{
+      margin-top: 50px;
+      /*padding-right: 5px;*/
+    }
+
+    section.dashboard div.radio-selector input:active +.massa-bolo{
+      opacity: .9;
+    }
+
+    section.dashboard div.radio-selector input:checked +.massa-bolo{
+      -webkit-filter: none;
+      -moz-filter: none;
+      filter: none;
+    }
+
+    section.dashboard input{
+      margin:0;
+      padding:0;
+      -webkit-appearance:none;
+      -moz-appearance:none;
+      appearance:none;
+    }
+
+    section.dashboard label.m01{
+      background-image:url("../images/massa/massa_chocolate.jpg");
+      margin-left: 16.5%;
+    }
+    section.dashboard label.m02{
+      background-image:url("../images/massa/massa_baunilha.jpg");
+      margin-left: 16.5%;
+    }
+    section.dashboard label.m03{
+      background-image:url("../images/massa/massa_morango.jpg");
+      margin-left: 16.5%;
+    }
+
+    section.dashboard label.r01{
+      background-image:url("../images/recheio/recheio_chocolate.jpg");
+      margin-left: 16.5%;
+    }
+    section.dashboard label.r02{
+      background-image:url("../images/recheio/recheio_baunilha.jpg");
+      margin-left: 16.5%;
+    }
+    section.dashboard label.r03{
+      background-image:url("../images/recheio/recheio_frutas.jpg");
+      margin-left: 16.5%;
+    }
+
+    section.dashboard label.c01{
+      background-image:url("../images/cobertura/cobertura_caramelo_circ.png");
+      margin-left: 16.5%;
+    }
+    section.dashboard label.c02{
+      background-image:url("../images/cobertura/coberturabranca_circ.png");
+      margin-left: 16.5%;
+    }
+    section.dashboard label.c03{
+      background-image:url("../images/cobertura/cobertura_chocolate_circ.png");
+      margin-left: 16.5%;
+    }
+
+
+
+    section.dashboard label.massa-bolo{
+      cursor:pointer;
+      background-size:contain;
+      background-repeat:no-repeat;
+      display:inline-block;
+      width:120px;
+      height:120px;
+      -webkit-transition: all 100ms ease-in;
+      -moz-transition: all 100ms ease-in;
+      transition: all 100ms ease-in;
+      -webkit-filter: brightness(1)  opacity(.7);
+      -moz-filter: brightness(1)  opacity(.7);
+      filter: brightness(1)  opacity(.7);
+    }
+    section.dashboard label.massa-bolo:hover{
+      -webkit-filter:  opacity(1);
+      -moz-filter: opacity(1);
+      filter: opacity(1);
+    }
+
+/* OLD */
+    .float{
+      float: none;
+      margin-left: 10px;
+    }
+
+    #button{
+      color: crimson;
+    }
+
+    .email{
+      padding-left: 345px;
+      font-size: 22px;
+      font-weight: bold;
+      color: crimson;
+    }
+
+    #email{
+      height: 31px;
+      width: 330px;
+      font-size: 15px;
+      font-family: 'Roboto';
+    }
+
+    .data{
+      padding-left: 345px;
+      font-size: 22px;
+      font-weight: bold;
+      color: crimson;
+    }
+
+    #dataEntrega{
+      height: 31px;
+      width: 252px;
+      font-size: 15px;
+      font-family: 'Roboto';
+    }

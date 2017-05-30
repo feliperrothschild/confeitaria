@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Confeitaria</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Poppins|Roboto|Roboto+Condensed|Roboto+Slab|Baloo|Barrio" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function(){
+    emailjs.init("user_ClzK5qkXCmq9eFtWt6TUn");
+  })();
+  </script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/styles_config.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body ng-app="mastercake">
+  <section class="dashboard_menu">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <img src="logos/logos-02.png" alt="Damn">
+        <a href="index.html" style="text-decoration: none"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> <span class="texto"> HOME </span> </a>
+        <a href="config_v2.html" style="text-decoration: none"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> <span class="texto"> MONTE SEU BOLO </span></a>
+        <a href="#empresa" style="text-decoration: none"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> <span class="texto"> SOBRE </span></a>
+        <a href="mailto:contato@damn.com.br" style="text-decoration: none"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <span class="texto"> CONTATO </span></a>
+
+
+      </div>
+    </nav>
+
+  </section>
+  <h1 class="build"> MONTE SEU BOLO </h1>
+
+
+
+  <section class="dashboard">
+    <div class="col-sm-2">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+      <h3 class="panel-title">RESUMO</h3>
+    </div>
+    <div class="panel-body">
+      <div class="bolo_selecionado"> <span>Massa: </span> <span class="massa_select"> </span> </div>
+      <div class="bolo_selecionado"> <span>Recheio: </span> <span class="recheio_select"> </span> </div>
+      <div class="bolo_selecionado"> <span>Cobertura: </span> <span class="cobertura_select"> </span> </div>
+      <div class="bolo_total">       <span>Total: </span><span class="valor-total"></span> </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="col-sm-8 row" ng-controller="CakeController">
+
+      <div class="panel panel-default" ng-show="pagina == 'pag_massa'">
+        <div class="panel-heading">
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
+
+        </div>
+        <div class="panel-body">
+          <!-- Chocolate -->
+          <div class="col-sm-3">
+
+            <div class="radio-selector">
+              <!-- <img src="images/massa_chocolate.png" alt="Chocolate"> -->
+              <input id="massa01" type="radio" name="massa" value="m01" />
+              <label class="massa-bolo m01"    for="massa01">    </label>
+              <p class="nome"> CHOCOLATE </p>
+              <p class="preco"> R$80,00 </p>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <!-- Baunilha -->
+            <div class="radio-selector">
+              <!-- <img src="images/massa_baunilha.png" alt="Baunilha"> -->
+              <input id="massa02" type="radio" name="massa" value="m02" />
+              <label class="massa-bolo m02"    for="massa02"> </label>
+              <p class="nome"> BAUNILHA </p>
+              <p class="preco"> R$70,00 </p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <!-- Morango -->
+            <div class="radio-selector">
+              <!-- <img src="images/bolo_morango.png" alt="Morango"> -->
+              <input id="massa03" type="radio" name="massa" value="m03" />
+              <label class="massa-bolo m03"    for="massa03"> </label>
+              <p class="nome"> MORANGO </p>
+              <p class="preco"> R$65,00 </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="panel panel-default" ng-show="pagina == 'pag_recheio'">
+        <div class="panel-heading">
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
+        </div>
+        <div class="panel-body" >
+          <!-- Chocolate -->
+          <div class="col-sm-3">
+
+            <div class="radio-selector">
+              <input id="recheio01" type="radio" name="recheio" value="r01" />
+              <label class="massa-bolo r01"    for="recheio01"> </label>
+              <p class="nome"> CHOCOLATE </p>
+              <p class="preco">R$80,00 </p>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <!-- Baunilha -->
+            <div class="radio-selector">
+              <input id="recheio02" type="radio" name="recheio" value="r02" />
+              <label class="massa-bolo r02"    for="recheio02"> </label>
+              <p class="nome"> BAUNILHA</p>
+              <p class="preco">R$70,00 </p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <!-- Morango -->
+            <div class="radio-selector">
+              <!-- <img src="images/bolo_morango.png" alt="Morango"> -->
+              <input id="recheio03" type="radio" name="recheio" value="r03" />
+              <label class="massa-bolo r03"    for="recheio03"> </label>
+              <p class="nome"> FRUTAS</p>
+              <p class="preco">R$65,00 </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="panel panel-default" ng-show="pagina == 'pag_cobertura'">
+        <div class="panel-heading">
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
+          <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
+        </div>
+        <div class="panel-body" >
+          <!-- Chocolate -->
+          <div class="col-sm-3">
+
+            <div class="radio-selector">
+              <!-- <img src="images/massa_chocolate.png" alt="Chocolate"> -->
+              <input id="cobertura01" type="radio" name="cobertura" value="c01" />
+              <label class="massa-bolo c01"    for="cobertura01"> </label>
+              <p class="nome"> CARAMELO</p>
+              <p class="preco">R$80,00 </p>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <!-- Baunilha -->
+            <div class="radio-selector">
+              <input id="cobertura02" type="radio" name="cobertura" value="c02" />
+              <label class="massa-bolo c02"    for="cobertura02"> </label>
+              <p class="nome"> MARSHMELLOW</p>
+              <p class="preco">R$70,00 </p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <!-- Morango -->
+            <div class="radio-selector">
+              <input id="cobertura03" type="radio" name="cobertura" value="c03" />
+              <label class="massa-bolo c03"    for="cobertura03"> </label>
+              <p class="nome"> CHOCOLATE</p>
+              <p class="preco">R$65,00 </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <p class="title"> MASSAS </p> -->
+
+  </section>
+
+<section class="configure">
+    <!-- Valor Total -->
+    <!-- <p class="title"> VALOR TOTAL </p> -->
+    <div>
+      <p class="valor-total title float"></p>
+    </div>
+    <div>
+      <label class="email" for="email">Contato: </label>
+      <input id="email" class="float" placeholder="Digite seu email.." >
+    </div>
+    <br>
+    <div>
+      <label class="data" for="dataEntrega">Data de Entrega: </label>
+      <input id="dataEntrega"class="float" type="date">
+    </div>
+    <br>
+    <div>
+      <button id="button" class="title float" onclick="enviarPedido()">Enviar pedido</button>
+    </div>
+
+
+  </div>
+</section>
+
+<script src="js/angular.min.js"></script>
+<script src="js/app.js"></script>
+
+<script src="js/scripts_config.js"> </script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

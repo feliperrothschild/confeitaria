@@ -1,0 +1,114 @@
+body{
+  /*max-width: 1000px;
+  margin-left: 10%;
+  background-color: #FFBC85;*/
+}
+/* ---------------------------------------------------------------------------*/
+/* CONFIGURAÇÃO DA BARRA DE NAVEGAÇÃO*/
+.menu{
+  background-color: #FF4175;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    z-index: +1;
+    margin: 0 0 0 0;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+    margin: 0;
+    margin-top: -30px;
+    margin-left: -8px;
+  }
+
+.menu img {
+  width: 13%;
+    margin-left: 21px;
+    margin-top: 10px;
+    float: left;
+  }
+  .menu span.home{
+    margin-left: 50%;
+    line-height: 95px;
+    }
+  .menu span.build{
+    margin-left: 3%;
+    line-height: 59px;
+    }
+  .menu span.about{
+  margin-left: 3%;
+  }
+
+.menu span.contact{
+  margin-left: 3%;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+/*.menu{
+  max-width: 1000px;
+}*/
+/* --------------------------------------------------------------------------*/
+/*DISPLAY BANNER*/
+
+.banner img{
+  width: 102% /*important*/;
+  height: auto;
+  display: none;
+  /*margin-top: 80px;*/
+  margin-left: -8px;
+}
+img.ativa{
+  display: block;
+}
+
+/*.texto_banner{
+  color: #257AED;
+  margin: 0;
+  text-align: center;
+  font-size: 50px;
+  display: inline-flex;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  display: inline;
+  margin-bottom: 38%;
+}*/
+
+/*---------------------------------------------------------------------------*/
+/* SOBRE */
+
+p{
+  margin-top: 10px;
+  margin-left: 100px;
+margin-right: 100px;
+font-family: 'Roboto';
+text-align: justify;
+font-size: 17px;
+color: #5C3227;
+
+}
+
+#empresa{
+  margin-top: 10%;
+  background-color: white;
+  border-radius: 10px;
+  /*border: 0.5px solid #888282;*/
+  height: 100%;
+}
+
+h1{
+  color: #A73A68;
+  margin-bottom: 2%;
+  font-size: 50px;
+  font-family: 'Baloo';
+  text-align: center;
+  color: #DE264C;
+}
