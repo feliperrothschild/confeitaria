@@ -1,0 +1,44 @@
+<section class="col-sm-8 row">
+  <div class="panel panel-default" ng-show="pagina == 'pag_recheio'">
+
+    <div class="panel-heading">
+      <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
+      <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
+      <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
+    </div>
+
+    <div class="panel-body" >
+      <!-- Chocolate -->
+      <div class="col-sm-3">
+        <div class="radio-selector">
+          <input id="recheio01" type="radio" name="recheio" value="r01" />
+          <label class="massa-bolo r01"    for="recheio01"> </label>
+          <p class="nome"> CHOCOLATE </p>
+          <p class="preco">R$80,00 </p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <!-- Baunilha -->
+        <div class="radio-selector">
+          <input id="recheio02" type="radio" name="recheio" value="r02" />
+          <label class="massa-bolo r02"    for="recheio02"> </label>
+          <p class="nome"> BAUNILHA</p>
+          <p class="preco">R$70,00 </p>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <!-- Morango -->
+        <div class="radio-selector">
+          <input id="recheio03" type="radio" name="recheio" value="r03" />
+          <label class="massa-bolo r03"    for="recheio03"> </label>
+          <p class="nome"> FRUTAS</p>
+          <p class="preco">R$65,00 </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
