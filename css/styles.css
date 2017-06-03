@@ -29,21 +29,23 @@ section.banner img.ativa                                                        
 
 p{
   margin-top: 10px;
-  margin-left: 100px;
-margin-right: 100px;
+  margin-left: 50px;
+margin-right: 50px;
 font-family: 'Roboto';
 text-align: justify;
 font-size: 17px;
 color: #5C3227;
 
+
 }
 
 #empresa{
   margin-top: 10%;
-  background-color: white;
   border-radius: 10px;
   /*border: 0.5px solid #888282;*/
-  height: 100%;
+
+  margin-bottom: 60px;
+
 }
 
 h1{
@@ -53,4 +55,60 @@ h1{
   font-family: 'Baloo';
   text-align: center;
   color: #DE264C;
+}
+
+
+
+.quadradoQuemSomos {
+    background: #FFB6C1;
+    height: 400px;
+    border-radius: 20px;
+
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  background-color: #FF4175;
+  color: white;
+  width: 100%;
+  margin: 0;
+
+}
+
+.footer {
+color: 	white;
+text-align: center;
+padding-top: 5px;
+padding-bottom: 10px;
+width: 100%;
+
+}
+
+@media (max-width: 769px){
+        footer {
+          height: 80px;
+        }
+
+        .quadradoQuemSomos {
+
+            height: auto;
+            margin: 20px;
+
+        }
+        .p3{
+          display: none;
+        }
+        .p4{
+          display: none;
+        }
+
+        iframe {
+          margin left: 5%;
+        }
+        .col-md-4 {
+    padding-left: 15%;
+    }
 }
