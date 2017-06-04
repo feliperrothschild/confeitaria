@@ -1,5 +1,5 @@
 // criar um módulo (1)
-var app = angular.module('mastercake', ['ui.router']);
+var app = angular.module('mastercake', ['ngAnimate','ui.router']);
 
 
 //DECLARAÇÕES DE CONTROLLERS

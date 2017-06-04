@@ -1,53 +1,47 @@
 <section class="col-lm-12 row">
-  <!-- <div class="panel panel-default" ng-show="pagina == 'pag_recheio'"> -->
 
-    <!-- <div class="panel-heading">
-      <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
-      <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
-      <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
-    </div> -->
+  <div class="panel-body">
 
-    <div class="panel-body">
-      <!-- Chocolate -->
-      <div class="col-sm-4">
-        <div class="radio-selector">
-          <input id="recheio01" type="radio" name="recheio" value="r01" ng-model="bolo.recheio" ng-change="calcularRecheio(value)" />
-          <label class="massa-bolo r01"    for="recheio01"> </label>
-          <p class="nome">CHOCOLATE</p>
-          <p class="preco">R$80,00</p>
-        </div>
+    <!-- Chocolate -->
+    <div class="col-sm-4">
+      <div class="radio-selector">
+        <input id="recheio01" type="radio" name="recheio" value="r01" ng-model="bolo.recheio" ng-change="calcularRecheio(value)" />
+        <label class="massa-bolo r01"    for="recheio01"> </label>
+        <p class="nome">CHOCOLATE</p>
+        <p class="preco">R$80,00</p>
       </div>
-
-      <div class="col-sm-4">
-        <!-- Baunilha -->
-        <div class="radio-selector">
-          <input id="recheio02" type="radio" name="recheio" value="r02" ng-model="bolo.recheio" ng-change="calcularRecheio(value)" />
-          <label class="massa-bolo r02"    for="recheio02"> </label>
-          <p class="nome">BAUNILHA</p>
-          <p class="preco">R$70,00</p>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <!-- Morango -->
-        <div class="radio-selector">
-          <input id="recheio03" type="radio" name="recheio" value="r03" ng-model="bolo.recheio" ng-change="calcularRecheio(value)" />
-          <label class="massa-bolo r03"    for="recheio03"> </label>
-          <p class="nome"> FRUTAS</p>
-          <p class="preco">R$65,00</p>
-        </div>
-      </div>
-
-      <br>
-      <br>
-          <div>
-            <ul class="pag-bolo">
-              <li class="previous">  <button ng-click="irParaMassa()">Anterior</button> </li>
-              <li class="next">  <button ng-click="irParaCobertura()">Próximo</button> </li>
-            </ul>
-          </div>
-
     </div>
 
-  <!-- </div> -->
+    <div class="col-sm-4">
+      <!-- Baunilha -->
+      <div class="radio-selector">
+        <input id="recheio02" type="radio" name="recheio" value="r02" ng-model="bolo.recheio" ng-change="calcularRecheio(value)" />
+        <label class="massa-bolo r02"    for="recheio02"> </label>
+        <p class="nome">BAUNILHA</p>
+        <p class="preco">R$70,00</p>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <!-- Morango -->
+      <div class="radio-selector">
+        <input id="recheio03" type="radio" name="recheio" value="r03" ng-model="bolo.recheio" ng-change="calcularRecheio(value)" />
+        <label class="massa-bolo r03"    for="recheio03"> </label>
+        <p class="nome">FRUTAS</p>
+        <p class="preco">R$65,00</p>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+  <div>
+    <ul class="pag-bolo">
+      <li class="previous">  <button ng-click="irParaMassa()">Anterior</button> </li>
+      <li class="next">  <button ng-click="irParaCobertura()">Próximo</button> </li>
+    </ul>
+  </div>
+
+
 </section>
