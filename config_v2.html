@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" >
 
 </head>
-<body ng-app="mastercake">
+<body ng-app="mastercake" ng-controller="HeaderController">
   <!-- ************************* BARRA DE NAVEGAÇÃO ********************************-->
   <section class = "navegacao">
 
@@ -49,71 +49,70 @@
 
   <h1 class="build"> MONTE SEU BOLO </h1>
 
-  <section class="dashboard">
+  <section class="dashboard" >
+
+    <!-- MENU LATERAL ESQUERDA -->
     <div class="col-sm-2 blocoA">
       <div class="panel panel-default">
         <div class="panel-heading">
-      <h3 class="panel-title">RESUMO</h3>
-    </div>
-    <div class="panel-body">
-      <div class="bolo_selecionado"> <span>Massa: </span> <span class="massa_select"> </span> </div>
-      <div class="bolo_selecionado"> <span>Recheio: </span> <span class="recheio_select"> </span> </div>
-      <div class="bolo_selecionado"> <span>Cobertura: </span> <span class="cobertura_select"> </span> </div>
-      <div class="bolo_total">       <span>Total: </span><span class="valor-total"></span> </div>
-    </div>
-  </div>
-    </div>
-
-
-
-        <div class="col-sm-8 row blocoB" ng-controller="CakeController">
-
-          <div class="panel panel-default blocoB" ng-show="pagina == 'pag_massa'">
-            <div class="panel-heading">
-              <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
-              <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
-              <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
-
-            </div>
-            <div class="panel-body">
-            <div ui-view></div>
-            </div>
+          <h3 class="panel-title">RESUMO</h3>
         </div>
+        <div class="panel-body">
+          <div class="bolo_selecionado"> <span>Massa: R$ </span> <span class="massa_select" ng-bind="bolo.massaVal"> {{bolo.massaVal}}</span> </div>
+          <div class="bolo_selecionado"> <span>Recheio: R$ </span> <span class="recheio_select" ng-bind="bolo.recheioVal"> {{bolo.recheioVal}} </span> </div>
+          <div class="bolo_selecionado"> <span>Cobertura: R$ </span> <span class="cobertura_select" ng-bind="bolo.coberturaVal"> {{bolo.coberturaVal}} </span> </div>
+          <div class="bolo_total">       <span>Total: R$ </span> <span class="valor_total" ng-bind="bolo.valorTotal"> {{bolo.valorTotal}} </span> </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CONFIG DO BOLO -->
+    <!-- <div class="col-sm-8 row blocoB" ng-controller="CakeController"> -->
+    <div class="col-sm-8 row blocoB">
+      <!-- <div class="panel panel-default blocoB" ng-show="pagina == 'pag_massa'"> -->
+      <div class="panel panel-default blocoB">
+        <!-- <div class="panel-heading">
+        <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
+        <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
+        <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
+
+      </div> -->
+
+      <!-- AREA DAS ROTAS -->
+      <div class="panel-body">
+
+        <div ui-view></div>
+
+      </div>
+
+    </div>
+
+    </div>
 
   </section>
 
-<section class="configure">
-    <!-- Valor Total -->
-    <!-- <p class="title"> VALOR TOTAL </p> -->
-    <div>
-      <p class="valor-total title float"></p>
-    </div>
-    <div>
-      <label class="email" for="email">Contato: </label>
-      <input id="email" class="float" placeholder="Digite seu email.." >
-    </div>
-    <br>
-    <div>
-      <label class="data" for="dataEntrega">Data de Entrega: </label>
-      <input id="dataEntrega"class="float" type="date">
-    </div>
-    <br>
-    <div>
-      <button id="button" class="title float" onclick="enviarPedido()">Enviar pedido</button>
-    </div>
 
 
-  </div>
-</section>
-
-<script src="js/angular.min.js"></script>
-<script src="js/app.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/scripts_config.js"> </script>
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<script src="js/controllers/header.js"></script>
+<script src="js/controllers/step-massa.js"></script>
+<script src="js/controllers/step-recheio.js"></script>
+<script src="js/controllers/step-cobertura.js"></script>
+<script src="js/controllers/step-final.js"></script>
+
+<script src="js/rotas.js"></script>
+<script src="js/app.js"></script>
 
 
 </body>

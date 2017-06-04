@@ -1,10 +1,14 @@
 // criar um módulo (1)
-var app = angular.module('mastercake', []);
+var app = angular.module('mastercake', ['ui.router']);
 
-// criar função do controller
-function CakeController($scope){
-  $scope.pagina = 'pag_massa';
 
-}
-//registrar a função como controller no angular (1)
-app.controller('CakeController', CakeController);
+//DECLARAÇÕES DE CONTROLLERS
+app.controller('HeaderController', HeaderController);
+app.controller('StepMassaController', StepMassaController);
+app.controller('StepRecheioController', StepRecheioController);
+app.controller('StepCoberturaController', StepCoberturaController);
+app.controller('StepFinalController', StepFinalController);
+
+
+//ROTAS
+app.config(rotas);

@@ -1,0 +1,29 @@
+<section class="col-lm-12 row">
+  <div class="panel-body">
+
+  <!-- <div>
+    <p class="valor-total title float"></p>
+  </div> -->
+  <div>
+    <label class="email" for="email">Contato: </label>
+    <input id="email" placeholder="Digite seu email.." ng-model="pedido.contato" />
+  </div>
+  <br>
+  <div>
+    <label class="data" for="dataEntrega">Data de Entrega: </label>
+    <input id="dataEntrega" type="date" ng-model="pedido.dataEntrega" />
+  </div>
+
+  <br>
+  <br>
+
+  <div>
+    <ul class="pag-bolo">
+      <li class="previous">  <button ng-click="irParaCobertura()">Anterior</button> </li>
+      <li class="next"> <button ng-click="enviarPedido()">Enviar pedido</button> </li>
+    </ul>
+  </div>
+
+  </div>
+
+</section>

@@ -1,17 +1,17 @@
-<section class="col-sm-8 row">
-  <div class="panel panel-default" ng-show="pagina == 'pag_cobertura'">
+<section class="col-lm-12 row">
+  <!-- <div class="panel panel-default" ng-show="pagina == 'pag_cobertura'">
 
     <div class="panel-heading">
       <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
       <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
       <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
-    </div>
+    </div> -->
 
     <div class="panel-body" >
       <!-- Chocolate -->
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <div class="radio-selector">
-          <input id="cobertura01" type="radio" name="cobertura" value="c01" />
+          <input id="cobertura01" type="radio" name="cobertura" value="c01" ng-model="bolo.cobertura" ng-change="calcularCobertura(value)" />
           <label class="massa-bolo c01"    for="cobertura01"> </label>
           <p class="nome"> CARAMELO</p>
           <p class="preco">R$80,00 </p>
@@ -21,7 +21,7 @@
       <div class="col-sm-3">
         <!-- Baunilha -->
         <div class="radio-selector">
-          <input id="cobertura02" type="radio" name="cobertura" value="c02" />
+          <input id="cobertura02" type="radio" name="cobertura" value="c02" ng-model="bolo.cobertura" ng-change="calcularCobertura(value)"/>
           <label class="massa-bolo c02"    for="cobertura02"> </label>
           <p class="nome"> MARSHMALLOW</p>
           <p class="preco">R$70,00 </p>
@@ -31,7 +31,7 @@
       <div class="col-sm-3">
         <!-- Morango -->
         <div class="radio-selector">
-          <input id="cobertura03" type="radio" name="cobertura" value="c03" />
+          <input id="cobertura03" type="radio" name="cobertura" value="c03" ng-model="bolo.cobertura" ng-change="calcularCobertura(value)" />
           <label class="massa-bolo c03"    for="cobertura03"> </label>
           <p class="nome"> CHOCOLATE</p>
           <p class="preco">R$65,00 </p>
@@ -40,5 +40,14 @@
 
     </div>
 
-  </div>
+    <br>
+    <br>
+        <div>
+          <ul class="pag-bolo">
+            <li class="previous">  <button ng-click="irParaRecheio()">Anterior</button> </li>
+            <li class="next">  <button ng-click="irParaFinal()">Próximo</button> </li>
+          </ul>
+        </div>
+
+  <!-- </div> -->
 </section>

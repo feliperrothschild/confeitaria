@@ -1,44 +1,51 @@
-<section class="col-sm-8 row">
-  <div class="panel panel-default" ng-show="pagina == 'pag_massa'">
+<section class="col-lm-12 row">
+  <!-- <div class="panel panel-default"> -->
 
-    <div class="panel-heading">
+    <!-- <div class="panel-heading">
       <h3 class="panel-title"> <a ng-click="pagina = 'pag_massa'"> MASSAS </a> | </h3>
       <h3 class="panel-title"> <a ng-click="pagina = 'pag_recheio'"> RECHEIO </a> | </h3>
       <h3 class="panel-title"> <a ng-click="pagina = 'pag_cobertura'"> COBERTURA </a></h3>
-    </div>
+    </div> -->
 
     <div class="panel-body">
       <!-- Chocolate -->
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <div class="radio-selector">
-          <input id="massa01" type="radio" name="massa" value="m01" />
+          <input id="massa01" type="radio" name="massa" value="m01" ng-model="bolo.massa" ng-change="calcularMassa(value)"/>
           <label class="massa-bolo m01"    for="massa01">    </label>
-          <p class="nome"> CHOCOLATE </p>
-          <p class="preco"> R$80,00 </p>
+          <p class="nome">CHOCOLATE</p>
+          <p class="preco">R$80,00</p>
         </div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <!-- Baunilha -->
         <div class="radio-selector">
-          <input id="massa02" type="radio" name="massa" value="m02" />
+          <input id="massa02" type="radio" name="massa" value="m02" ng-model="bolo.massa" ng-change="calcularMassa(value)"/>
           <label class="massa-bolo m02"    for="massa02"> </label>
-          <p class="nome"> BAUNILHA </p>
-          <p class="preco"> R$70,00 </p>
+          <p class="nome">BAUNILHA</p>
+          <p class="preco">R$70,00</p>
         </div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-sm-4">
         <!-- Morango -->
         <div class="radio-selector">
-          <input id="massa03" type="radio" name="massa" value="m03" />
+          <input id="massa03" type="radio" name="massa" value="m03" ng-model="bolo.massa" ng-change="calcularMassa(value)"/>
           <label class="massa-bolo m03"    for="massa03"> </label>
-          <p class="nome"> MORANGO </p>
-          <p class="preco"> R$65,00 </p>
+          <p class="nome">MORANGO</p>
+          <p class="preco">R$65,00</p>
         </div>
       </div>
 
     </div>
+<br>
+<br>
+    <div>
+      <ul class="pag-bolo">
+        <li class="next">  <button ng-click="irParaRecheio()">Próximo</button> </li>
+      </ul>
+    </div>
 
-  </div>
+  <!-- </div> -->
 </section>

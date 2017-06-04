@@ -117,41 +117,41 @@ h1.build{
 
     section.dashboard label.m01{
       background-image:url("../images/massa/massa_chocolate.jpg");
-      margin-left: 16.5%;
+      margin-left: 30%;
     }
     section.dashboard label.m02{
       background-image:url("../images/massa/massa_baunilha.jpg");
-      margin-left: 16.5%;
+      margin-left: 30%;
     }
     section.dashboard label.m03{
       background-image:url("../images/massa/massa_morango.jpg");
-      margin-left: 16.5%;
+      margin-left: 30%;
     }
 
     section.dashboard label.r01{
       background-image:url("../images/recheio/recheio_chocolate.jpg");
-      margin-left: 16.5%;
+      margin-left: 30%;
     }
     section.dashboard label.r02{
       background-image:url("../images/recheio/recheio_baunilha.jpg");
-      margin-left: 16.5%;
+      margin-left: 30%;
     }
     section.dashboard label.r03{
       background-image:url("../images/recheio/recheio_frutas.jpg");
-      margin-left: 16.5%;
+      margin-left: 30%;
     }
 
     section.dashboard label.c01{
       background-image:url("../images/cobertura/cobertura_caramelo_circ.png");
-      margin-left: 16.5%;
+      margin-left: 33%;
     }
     section.dashboard label.c02{
       background-image:url("../images/cobertura/coberturabranca_circ.png");
-      margin-left: 16.5%;
+      margin-left: 30%;
     }
     section.dashboard label.c03{
       background-image:url("../images/cobertura/cobertura_chocolate_circ.png");
-      margin-left: 16.5%;
+      margin-left: 30%;
     }
 
 
@@ -187,7 +187,7 @@ h1.build{
     }
 
     .email{
-      padding-left: 345px;
+      /*padding-left: 345px;*/
       font-size: 22px;
       font-weight: bold;
       color: crimson;
@@ -201,7 +201,7 @@ h1.build{
     }
 
     .data{
-      padding-left: 345px;
+      /*padding-left: 345px;*/
       font-size: 22px;
       font-weight: bold;
       color: crimson;
@@ -226,3 +226,42 @@ h1.build{
                                                                                 div.blocoB {height:auto;width:100%; margin-top:7%; margin-left:-10px;}
                                                                                 section.dashboard div.bolo_total{font-weight: bold; margin-top: 0%;}
                                                                                 section.dashboard div.panel{height:auto;}}
+
+.pag-bolo {
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+.pag-bolo li {
+  display: inline;
+}
+.pag-bolo li > button,
+.pag-bolo li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+.pag-bolo li > button:hover,
+.pag-bolo li > button:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+.pag-bolo .next > button,
+.pag-bolo .next > span {
+  float: right;
+}
+.pag-bolo .previous > button,
+.pag-bolo .previous > span {
+  float: left;
+}
+.pag-bolo .disabled > button,
+.pag-bolo .disabled > button:hover,
+.pag-bolo .disabled > button:focus,
+.pag-bolo .disabled > span {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+}
