@@ -2,7 +2,7 @@
 /* GERAL
 =================================================================================================================================== */
 
-body                                                                            {background-color: #f9f9f9; padding-top:50px;}
+body                                                                            {background-color: #FFFAF0; padding-top:50px;}
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* NAVEGAÇÃO
@@ -41,7 +41,7 @@ color: #5C3227;
 }
 
 #empresa{
-  margin-top: 10%;
+  margin-top: 8%;
   border-radius: 10px;
   /*border: 0.5px solid #888282;*/
 
@@ -82,7 +82,7 @@ footer {
 .footer {
 color: 	white;
 text-align: center;
-padding-top: 5px;
+/*padding-top: 5px;*/
 padding-bottom: 10px;
 width: 100%;
 
