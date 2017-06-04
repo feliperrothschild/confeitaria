@@ -9,10 +9,10 @@ body                                                                            
 section.navegacao nav                                                           {background-color: #FF4175; display:block;width:auto;}
 section.navegacao a.navbar-brand                                                {color:white;font-family: 'Baloo', sans-serif; font-size:24px;}
 section.navegacao .navbar-default .navbar-nav>li>a                              {color: white;font-family: 'Baloo', sans-serif; font-size:16px;}
-section.navegacao .navbar-default .navbar-nav>li.active>a                       {background-color: #FFBBCD;}
+section.navegacao .navbar-default .navbar-nav>li.active>a                       {background-color: #FFD2C6; color: #555461;}
 section.navegacao .glyphicon                                                    {padding-right: 5px;}
 section.navegacao .navbar-default .navbar-toggle .icon-bar                      {background-color: white;}
-section.navegacao .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {background-color: #FFBBCD;}
+section.navegacao .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {background-color: #FFBBCD; color: #555461;}
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
@@ -63,11 +63,11 @@ h1.build{
     }
 
     section.dashboard div.panel-heading{
-      background-color: #FFD4EE;
+      background-color: #FFD2C6;
     }
 
     section.dashboard h3.panel-title{
-      /*color: #FFB009;*/
+      color: #555461;
       font-size: 25px;
       font-weight: bold;
       font-family: 'Roboto Slab', sans-serif;
