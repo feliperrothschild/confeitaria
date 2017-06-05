@@ -14,38 +14,32 @@ function StepRecheioController($scope, $state){
 
     console.log('radio escolhido: ', $scope.bolo.recheio);
 
-    if ($scope.bolo.recheio != 'undefined') {
+    switch ($scope.bolo.recheio) {
+      case 'r01':
+      $scope.bolo.recheioVal = 80;
+      break;
 
-      if ($scope.bolo.recheio == 'r01') {
-        $scope.bolo.recheioVal = 80;
+      case 'r02':
+      $scope.bolo.recheioVal = 70;
+      break
 
-      } else {
-        if ($scope.bolo.recheio == 'r02') {
-          $scope.bolo.recheioVal = 70;
-        } else {
-
-          if ($scope.bolo.recheio == 'r03') {
-            $scope.bolo.recheioVal = 65;
-          }
-
-        }
-
-      }
-
-      console.log('valor do recheio: ', $scope.bolo.recheioVal);
-
-      $scope.bolo.valorTotal = $scope.bolo.massaVal + $scope.bolo.recheioVal + $scope.bolo.coberturaVal ;
-
-
+      case 'r03':
+      $scope.bolo.recheioVal = 65;
+      break;
+      default:
     }
+
+    $scope.bolo.valorTotal = $scope.bolo.massaVal + $scope.bolo.recheioVal + $scope.bolo.coberturaVal ;
+    console.log('valor do recheio: ', $scope.bolo.recheioVal);
+    console.log('Valor Total: ',$scope.bolo.valorTotal );
 
   }
 
   function irParaCobertura(){
 
-    console.log('função do botão próximo foi chamada');
+    console.log('Função do botão próximo foi chamada');
 
-    if ( $scope.bolo.recheio != null){
+    if ($scope.bolo.recheio){
 
       $state.go('step-cobertura');
 

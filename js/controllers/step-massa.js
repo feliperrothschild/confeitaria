@@ -3,7 +3,6 @@ function StepMassaController($scope, $state){
   console.log('StepMassaController está funcionando');
 
   $scope.calcularMassa = calcularMassa;
-
   $scope.irParaRecheio = irParaRecheio;
 
   function calcularMassa(){
@@ -12,32 +11,25 @@ function StepMassaController($scope, $state){
 
     console.log('radio escolhido: ', $scope.bolo.massa);
 
-    if ($scope.bolo.massa != 'undefined') {
 
-      if ($scope.bolo.massa == 'm01') {
-        $scope.bolo.massaVal = 80;
+    switch ($scope.bolo.massa) {
+      case 'm01':
+      $scope.bolo.massaVal = 80;
+      break;
 
-      } else {
-        if ($scope.bolo.massa == 'm02') {
-          $scope.bolo.massaVal = 70;
-        } else {
+      case 'm02':
+      $scope.bolo.massaVal = 70;
+      break
 
-          if ($scope.bolo.massa == 'm03') {
-            $scope.bolo.massaVal = 65;
-          }
-
-        }
-
-      }
-
-      console.log('valor da massa: ', $scope.bolo.massaVal);
-
-      $scope.bolo.valorTotal = $scope.bolo.massaVal + $scope.bolo.recheioVal + $scope.bolo.coberturaVal ;
-      // return  $scope.bolo.massaVal;
-
-      console.log('Valor Total: ',$scope.bolo.valorTotal );
-
+      case 'm03':
+      $scope.bolo.massaVal = 65;
+      break;
+      default:
     }
+
+    $scope.bolo.valorTotal = $scope.bolo.massaVal + $scope.bolo.recheioVal + $scope.bolo.coberturaVal ;
+    console.log('valor da massa: ', $scope.bolo.massaVal);
+    console.log('Valor Total: ',$scope.bolo.valorTotal );
 
   }
 
@@ -45,7 +37,7 @@ function StepMassaController($scope, $state){
 
     console.log('função do botão próximo foi chamada');
 
-    if ( $scope.bolo.massa != null) {
+    if ($scope.bolo.massa) {
 
       $state.go('step-recheio');
 

@@ -1,29 +1,32 @@
 <section class="col-lm-12 row">
   <div class="panel-body">
 
-  <!-- <div>
+    <!-- <div>
     <p class="valor-total title float"></p>
   </div> -->
-  <div>
-    <label class="email" for="email">Contato: </label>
-    <input id="email" placeholder="Digite seu email.." ng-model="pedido.contato" />
-  </div>
-  <br>
-  <div>
-    <label class="data" for="dataEntrega">Data de Entrega: </label>
-    <input id="dataEntrega" type="date" ng-model="pedido.dataEntrega" />
-  </div>
+  <form>
 
-  <br>
-  <br>
+    <div>
+      <label class="email" for="email">Contato: </label>
+      <input id="email" type="email" placeholder="Digite seu email.." ng-model="pedido.contato" />
+    </div>
+    <br>
+    <div>
+      <label class="data" for="dataEntrega">Data de Entrega: </label>
+      <input id="dataEntrega" type="date" ng-model="pedido.dataEntrega" />
+    </div>
 
-  <div>
-    <ul class="pag-bolo">
-      <li class="previous">  <button ng-click="irParaCobertura()">Anterior</button> </li>
-      <li class="next"> <button ng-click="enviarPedido()">Enviar pedido</button> </li>
-    </ul>
-  </div>
 
-  </div>
+    <br>
+    <br>
+
+    <div>
+      <ul class="pag-bolo">
+        <li class="previous">  <button ng-click="irParaCobertura()">Anterior</button> </li>
+        <li class="next"> <button type="submit" ng-click="enviarPedido()">Enviar pedido</button> </li>
+      </ul>
+    </div>
+  </form>
+</div>
 
 </section>

@@ -10,12 +10,11 @@ $scope.irParaCobertura = irParaCobertura;
 function enviarPedido(){
 
 console.log('Botão enviar pedido está funcionando');
-
 console.log('contato inicial', $scope.pedido.contato);
 
   // Verificar se dados de email e entrega foram informados
-      if ($scope.pedido.contato == null ||
-          $scope.pedido.dataEntrega == null ) {
+      if (!$scope.pedido.contato ||
+          !$scope.pedido.dataEntrega ) {
   // Se não informou algum, mensagem de erro...
         alert("Favor informar Email de contato e Data de Entrega.. =)");
 
