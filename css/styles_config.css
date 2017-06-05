@@ -1,7 +1,7 @@
 /* GERAL
 =================================================================================================================================== */
 
-body                                                                            {font-family: 'Roboto', sans-serif;}
+body                                                                            {font-family: 'Roboto', sans-serif; padding-top:60px;}
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* NAVEGAÇÃO
@@ -66,7 +66,9 @@ h1.build{
     section.dashboard div.panel-heading{
       background-color: #FFD2C6;
     }
-
+    section.dashboard div.guia_preco{
+      display:block;
+    }
     section.dashboard h3.panel-title{
       color: #555461;
       font-size: 25px;
@@ -117,41 +119,41 @@ h1.build{
 
     section.dashboard label.m01{
       background-image:url("../images/massa/massa_chocolate_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
     section.dashboard label.m02{
       background-image:url("../images/massa/massa_baunilha_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
     section.dashboard label.m03{
       background-image:url("../images/massa/massa_morango_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
 
     section.dashboard label.r01{
       background-image:url("../images/recheio/recheio_chocolate_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
     section.dashboard label.r02{
       background-image:url("../images/recheio/recheio_baunilha_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
     section.dashboard label.r03{
       background-image:url("../images/recheio/recheio_frutas_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
 
     section.dashboard label.c01{
       background-image:url("../images/cobertura/cobertura_caramelo_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
     section.dashboard label.c02{
       background-image:url("../images/cobertura/coberturabranca_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
     section.dashboard label.c03{
       background-image:url("../images/cobertura/cobertura_chocolate_circ.png");
-      margin-left: 30%;
+      margin-left: 12%;
     }
 
 
@@ -332,13 +334,26 @@ h1.build{
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* RESPONSIVO
 =================================================================================================================================== */
-@media screen and (min-width: 769px) and (max-width:992px)                  {div.blocoA {height:100px;width: 100%}
+@media screen and (min-width: 769px) and (max-width:992px)                  {div.blocoA {height:185px;width: 100%}
                                                                             div.blocoB {height:auto;width:100%; margin-top:7%; margin-left:-10px;}
                                                                             section.dashboard div.bolo_total{font-weight: bold; margin-top: 0%;}
                                                                             section.dashboard div.panel{height:auto}}
 
-@media screen and (max-width:769px)                                         {div.blocoA {height:100px;width: 100%}
+@media screen and (max-width:769px)                                         {div.blocoA {height:185px;width: 100%;}
                                                                             div.blocoB {height:auto;width:100%; margin-top:7%; margin-left:-10px;}
                                                                             section.dashboard div.bolo_total{font-weight: bold; margin-top: 0%;}
                                                                             section.dashboard div.panel{height:auto;}
-                                                                            #status-buttons a{font-size: 11px; margin-right: 5px;}}
+                                                                            section.dashboard .panel-body{display: inline-flex; margin-left: -10px;}
+                                                                            h1.build{font-size:36px;}
+                                                                            #status-buttons a{font-size: 10px; margin-right: 5px;}
+                                                                            #status-buttons span {height: 30px; width: 30px;}
+                                                                            section.dashboard div.radio-selector {margin-top: 10px;}
+                                                                            section.dashboard label.massa-bolo {height: 70px; width: 70px;margin-left: -10%;}
+                                                                            section.dashboard p.nome {font-size: 12px; text-align: left;}
+                                                                            section.dashboard p.preco {font-size: 12px; text-align: left;}
+                                                                            section.cobertura div.col-sm-3.cob { margin: 0; padding: 8px;}
+                                                                            /*.panel.panel-default.blocoB {min-width: 347px;}*/
+
+}
+                                                                          }
+/*@media screen and (max-width: 415px)                                      {.col-sm-4.marsh {margin-top: 20px;}}*/
