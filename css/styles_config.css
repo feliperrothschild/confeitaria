@@ -116,28 +116,28 @@ h1.build{
     }
 
     section.dashboard label.m01{
-      background-image:url("../images/massa/massa_chocolate.jpg");
+      background-image:url("../images/massa/massa_chocolate_circ.png");
       margin-left: 30%;
     }
     section.dashboard label.m02{
-      background-image:url("../images/massa/massa_baunilha.jpg");
+      background-image:url("../images/massa/massa_baunilha_circ.png");
       margin-left: 30%;
     }
     section.dashboard label.m03{
-      background-image:url("../images/massa/massa_morango.jpg");
+      background-image:url("../images/massa/massa_morango_circ.png");
       margin-left: 30%;
     }
 
     section.dashboard label.r01{
-      background-image:url("../images/recheio/recheio_chocolate.jpg");
+      background-image:url("../images/recheio/recheio_chocolate_circ.png");
       margin-left: 30%;
     }
     section.dashboard label.r02{
-      background-image:url("../images/recheio/recheio_baunilha.jpg");
+      background-image:url("../images/recheio/recheio_baunilha_circ.png");
       margin-left: 30%;
     }
     section.dashboard label.r03{
-      background-image:url("../images/recheio/recheio_frutas.jpg");
+      background-image:url("../images/recheio/recheio_frutas_circ.png");
       margin-left: 30%;
     }
 
@@ -213,20 +213,7 @@ h1.build{
       font-size: 15px;
       font-family: 'Roboto';
     }
-
-    /* -------------------------------------------------------------------------------------------------------------------------------- */
-    /* RESPONSIVO
-    =================================================================================================================================== */
-    @media screen and (min-width: 769px) and (max-width:992px)                  {div.blocoA {height:100px;width: 100%}
-                                                                                div.blocoB {height:auto;width:100%; margin-top:7%; margin-left:-10px;}
-                                                                                section.dashboard div.bolo_total{font-weight: bold; margin-top: 0%;}
-                                                                                section.dashboard div.panel{height:auto}}
-
-    @media screen and (max-width:769px)                                         {div.blocoA {height:100px;width: 100%}
-                                                                                div.blocoB {height:auto;width:100%; margin-top:7%; margin-left:-10px;}
-                                                                                section.dashboard div.bolo_total{font-weight: bold; margin-top: 0%;}
-                                                                                section.dashboard div.panel{height:auto;}}
-
+/* ------------------------------------------------------------------------*/
 .pag-bolo {
   padding-left: 0;
   margin: 20px 0;
@@ -339,3 +326,17 @@ h1.build{
     from    { -webkit-transform:translateX(200%); }
     to      { -webkit-transform: translateX(0); }
 }
+
+/* -------------------------------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVO
+=================================================================================================================================== */
+@media screen and (min-width: 769px) and (max-width:992px)                  {div.blocoA {height:100px;width: 100%}
+                                                                            div.blocoB {height:auto;width:100%; margin-top:7%; margin-left:-10px;}
+                                                                            section.dashboard div.bolo_total{font-weight: bold; margin-top: 0%;}
+                                                                            section.dashboard div.panel{height:auto}}
+
+@media screen and (max-width:769px)                                         {div.blocoA {height:100px;width: 100%}
+                                                                            div.blocoB {height:auto;width:100%; margin-top:7%; margin-left:-10px;}
+                                                                            section.dashboard div.bolo_total{font-weight: bold; margin-top: 0%;}
+                                                                            section.dashboard div.panel{height:auto;}
+                                                                            #status-buttons a{font-size: 11px; margin-right: 5px;}}
