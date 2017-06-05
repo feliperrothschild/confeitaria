@@ -15,14 +15,17 @@ function StepMassaController($scope, $state){
     switch ($scope.bolo.massa) {
       case 'm01':
       $scope.bolo.massaVal = 80;
+      $scope.bolo.massaDes = "Chocolate";
       break;
 
       case 'm02':
       $scope.bolo.massaVal = 70;
-      break
+      $scope.bolo.massaDes = "Baunilha";
+      break;
 
       case 'm03':
       $scope.bolo.massaVal = 65;
+      $scope.bolo.massaDes = "Morango";
       break;
       default:
     }

@@ -15,14 +15,17 @@ function StepCoberturaController($scope, $state){
     switch ($scope.bolo.cobertura) {
       case 'c01':
       $scope.bolo.coberturaVal = 80;
+      $scope.bolo.coberturaDes = "Caramelo";
       break;
 
       case 'c02':
       $scope.bolo.coberturaVal = 70;
-      break
+      $scope.bolo.coberturaDes = "Marshmallow";
+      break;
 
       case 'c03':
       $scope.bolo.coberturaVal = 65;
+      $scope.bolo.coberturaDes = "Chocolate";
       break;
       default:
     }

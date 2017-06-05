@@ -58,9 +58,21 @@
           <h3 class="panel-title">RESUMO</h3>
         </div>
         <div class="panel-body">
-          <div class="bolo_selecionado"> <span>Massa: R$ </span> <span class="massa_select" ng-bind="bolo.massaVal"> {{bolo.massaVal}}</span> </div>
-          <div class="bolo_selecionado"> <span>Recheio: R$ </span> <span class="recheio_select" ng-bind="bolo.recheioVal"> {{bolo.recheioVal}} </span> </div>
-          <div class="bolo_selecionado"> <span>Cobertura: R$ </span> <span class="cobertura_select" ng-bind="bolo.coberturaVal"> {{bolo.coberturaVal}} </span> </div>
+          <div class="bolo_selecionado"> <span>Massa: R$ </span>
+            <span class="massa_select" ng-bind="bolo.massaVal"> {{bolo.massaVal}}</span>
+            <span class="massa_select" ng-bind="bolo.massaDes"> {{bolo.massaDes}}</span>
+          </div>
+          <br>
+          <div class="bolo_selecionado"> <span>Recheio: R$ </span>
+            <span class="recheio_select" ng-bind="bolo.recheioVal"> {{bolo.recheioVal}} </span>
+            <span class="recheio_select" ng-bind="bolo.recheioDes"> {{bolo.recheioDes}}</span>
+          </div>
+          <br>
+          <div class="bolo_selecionado"> <span>Cobertura: R$ </span>
+            <span class="cobertura_select" ng-bind="bolo.coberturaVal"> {{bolo.coberturaVal}} </span>
+            <span class="cobertura_select" ng-bind="bolo.coberturaDes"> {{bolo.coberturaDes}} </span>
+          </div>
+          <br>
           <div class="bolo_total">       <span>Total: R$ </span> <span class="valor_total" ng-bind="bolo.valorTotal"> {{bolo.valorTotal}} </span> </div>
         </div>
       </div>
@@ -80,10 +92,10 @@
       </div> -->
 
       <div id="status-buttons" class=" panel-heading page-header-X text-center">
-        <a ui-sref-active="active" ui-sref="step-massa"><span>1</span> Massa</a>
-        <a ui-sref-active="active" ui-sref="step-recheio"><span>2</span> Recheio</a>
-        <a ui-sref-active="active" ui-sref="step-cobertura"><span>3</span> Cobertura</a>
-        <a ui-sref-active="active" ui-sref="step-final"><span>4</span> Finalizar</a>
+        <a ui-sref-active="active" ui-sref="step-massa"><span>1</span> MASSA > </a>
+        <a ui-sref-active="active" ui-sref="step-recheio"><span>2</span> RECHEIO > </a>
+        <a ui-sref-active="active" ui-sref="step-cobertura"><span>3</span> COBERTURA > </a>
+        <a ui-sref-active="active" ui-sref="step-final"><span>4</span>FINALIZAR</a>
       </div>
 
       <!-- AREA DAS ROTAS -->

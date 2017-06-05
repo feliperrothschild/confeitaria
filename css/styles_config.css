@@ -161,14 +161,14 @@ h1.build{
       background-size:contain;
       background-repeat:no-repeat;
       display:inline-block;
-      width:120px;
-      height:120px;
+      width:140px;
+      height:140px;
       -webkit-transition: all 100ms ease-in;
       -moz-transition: all 100ms ease-in;
       transition: all 100ms ease-in;
-      -webkit-filter: brightness(1)  opacity(.7);
-      -moz-filter: brightness(1)  opacity(.7);
-      filter: brightness(1)  opacity(.7);
+      -webkit-filter: brightness(1)  opacity(.5);
+      -moz-filter: brightness(1)  opacity(.5);
+      filter: brightness(1)  opacity(.5);
     }
     section.dashboard label.massa-bolo:hover{
       -webkit-filter:  opacity(1);
@@ -198,6 +198,7 @@ h1.build{
       width: 330px;
       font-size: 15px;
       font-family: 'Roboto';
+      border-radius: 5px;
     }
 
     .data{
@@ -212,6 +213,7 @@ h1.build{
       width: 252px;
       font-size: 15px;
       font-family: 'Roboto';
+      border-radius: 5px;
     }
 /* ------------------------------------------------------------------------*/
 .pag-bolo {
@@ -256,11 +258,11 @@ h1.build{
 
 /* numbered buttons */
 #status-buttons                 {  }
-#status-buttons a               { color:#FFF; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
+#status-buttons a               { color:#FFF; display:inline-block; font-size:15px; margin-right:10px; text-align:center; }
 #status-buttons a:hover         { text-decoration:none; }
 
 /* we will style the span as the circled number */
-#status-buttons span            { background:#555461; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px;
+#status-buttons span            { background:#555461; display:block; height:40px; width:40px; margin:0 auto 10px; padding-top:9px;
     border-radius:50%; }
 
 /* active buttons */

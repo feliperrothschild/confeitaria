@@ -3,10 +3,13 @@ function HeaderController($scope){
 $scope.bolo = {
   massa: null,
   massaVal: null,
+  massaDes: null,
   recheio: null,
   recheioVal: null,
+  recheioDes: null,
   cobertura: null,
   coberturaVal: null,
+  coberturaDes: null,
   valorTotal: null,
   };
 

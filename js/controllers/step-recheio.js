@@ -17,14 +17,17 @@ function StepRecheioController($scope, $state){
     switch ($scope.bolo.recheio) {
       case 'r01':
       $scope.bolo.recheioVal = 80;
+      $scope.bolo.recheioDes = "Chocolate";
       break;
 
       case 'r02':
       $scope.bolo.recheioVal = 70;
-      break
+      $scope.bolo.recheioDes = "Baunilha";
+      break;
 
       case 'r03':
       $scope.bolo.recheioVal = 65;
+      $scope.bolo.recheioDes = "Frutas";
       break;
       default:
     }
