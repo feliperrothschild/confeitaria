@@ -1,7 +1,8 @@
 /* GERAL
 =================================================================================================================================== */
 
-body                                                                            {font-family: 'Roboto', sans-serif; padding-top:60px;}
+body                                                                            {font-family: 'Roboto', sans-serif; padding-top:60px;
+                                                                                 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 /* NAVEGAÇÃO
@@ -82,13 +83,13 @@ h1.build{
     }
     section.dashboard p.nome{
       font-weight: bold;
-      margin:0;
+      margin-left: -12%;
       font-size: 20px;
       text-align: center;
     }
 
     section.dashboard p.preco{
-      margin:0;
+      margin-left: -15%;
       font-size: 16px;
       color: #257aed;
       text-align: center;
@@ -119,41 +120,41 @@ h1.build{
 
     section.dashboard label.m01{
       background-image:url("../images/massa/massa_chocolate_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
     section.dashboard label.m02{
       background-image:url("../images/massa/massa_baunilha_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
     section.dashboard label.m03{
       background-image:url("../images/massa/massa_morango_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
 
     section.dashboard label.r01{
       background-image:url("../images/recheio/recheio_chocolate_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
     section.dashboard label.r02{
       background-image:url("../images/recheio/recheio_baunilha_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
     section.dashboard label.r03{
       background-image:url("../images/recheio/recheio_frutas_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
 
     section.dashboard label.c01{
       background-image:url("../images/cobertura/cobertura_caramelo_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
     section.dashboard label.c02{
       background-image:url("../images/cobertura/coberturabranca_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
     section.dashboard label.c03{
       background-image:url("../images/cobertura/cobertura_chocolate_circ.png");
-      margin-left: 12%;
+      margin-left: 20%;
     }
 
 

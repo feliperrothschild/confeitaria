@@ -113,3 +113,56 @@ width: 100%;
     padding-left: 15%;
     }
 }
+
+.passos{
+    display: flex;
+}
+
+.passos div{
+    width: 550px;
+    background-color: #FFFAF0 ;
+}
+
+.passos .passo1{
+    border-right: 1px double #FF4175 ;
+}
+
+.passos .passo2{
+    border-right: 1px double #FF4175 ;
+}
+
+.passos .passo3{
+
+}
+
+.passos div .passo{
+    margin: auto;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Baloo';
+}
+
+.passos div img{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 75px;
+    width: 200px;
+    height: 180px;
+    border-spacing: inherit;
+}
+
+.passos div .texto{
+    margin: 0 20px 0 30px;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    padding-left: 10%;
+    font-family: 'Baloo';
+}
+
+.passos-h1{
+  margin-top: 5%
+}
